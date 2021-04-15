@@ -2,14 +2,46 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary: rgb(0, 113, 128);
+  --secondary: papayawhip;
+  --black: #333;
+}
+
 body {
+  margin: 0;
   font-family: 'Open Sans', sans-serif;
   font-size: 112.5%;
   line-height: 1.4;
+  color: var(--black);
+}
+
+a {
+  text-decoration: none;
+  border-bottom: 2px solid¥;
 }
 
 input,
 button,
 textarea {
   font-size: inherit;
+}
+
+.page-header {
+  padding: 20px;
+  background: var(--secondary);
+  margin-bottom: 40px;
+}
+
+.button {
+  background: var(--black);
+  color: whitesmoke;
+  border-bottom: none;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.image-fluid {
+  width: 100%;
+  height: auto;
 }
