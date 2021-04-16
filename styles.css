@@ -30,6 +30,20 @@ textarea {
   font-size: inherit;
 }
 
+table {
+  width: 100%;
+  background: var(--contrast-light);
+  border-collapse: collapse;
+  border-radius: 8px;
+}
+table tr:nth-child(2n) {
+  background: var(--contrast);
+}
+
+td {
+  padding: 8px;
+}
+
 .page-header {
   display: flex;
   flex-direction: column;
