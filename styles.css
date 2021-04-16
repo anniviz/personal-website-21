@@ -18,7 +18,7 @@ body {
 
 a {
   text-decoration: none;
-  border-bottom: 2px solid¥;
+  border-bottom: 2px solid;
 }
 
 input,
@@ -31,6 +31,12 @@ textarea {
   padding: 20px;
   background: var(--secondary);
   margin-bottom: 40px;
+}
+
+.page-main {
+  display: grid;
+  gap: 40px;
+  place-items: center;
 }
 
 .button {

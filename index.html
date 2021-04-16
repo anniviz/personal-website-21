@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Annemarie Wisbar</title>
-    <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
@@ -13,92 +12,104 @@
     />
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header" id="start">
       <h1>Annis Website</h1>
       <nav>
         <a href="#contact" class="button">Contact</a>
         <a href="#bio">Biography</a>
       </nav>
-      <img src="images/AnniMonster.jpg" alt="" class="image-fluid" />
+      <picture>
+        <source
+          media="(max-width: 599px)"
+          srcset="images/AnniMonster_mobile.jpg"
+        />
+        <source media="(min-width: 600px)" srcset="images/AnniMonster.jpg" />
+        <img src="images/AnniMonster.jpg" alt="" />
+      </picture>
     </header>
-    <section>
-      <h2>interests</h2>
-      <span>family</span>
-      <span>ballet</span>
-      <span>music</span>
-      <span>sewing</span>
-      <span>numbers</span>
-      <span>art</span>
-      <h2>skills</h2>
-      <span>html</span>
-      <span>css</span>
-      <span>javascript</span>
-      <span>react</span>
-    </section>
-    <section>
-      <h2 id="contact">Contact information</h2>
-      <h3>phone</h3>
-      <a href="tel:+491702735999">01702735999</a>
-      <h3>email</h3>
-      <a href="mailto:a.wisbar@gmail.com">a.wisbar@gmail.com</a>
-      <div>
-        <img src="images/github-cat.svg" alt="github logo" />
-        <a
-          href="https://github.com/anniviz"
-          rel="noopener noreferrer"
-          target="_blank"
-          >meet me on github</a
-        >
-      </div>
-      <div>
-        <img src="images/xing.svg" alt="xing logo" />
-        <a
-          href="https://www.xing.com/profile/Annemarie_Wisbar/cv"
-          rel="noopener noreferrer"
-          target="_blank"
-          >meet me on xing</a
-        >
-      </div>
-      <div>
-        <img src="images/codepen.svg" alt="codepen logo" />
-        <a
-          href="https://codepen.io/anniviz"
-          rel="noopener noreferrer"
-          target="_blank"
-          >meet me on codepen</a
-        >
-      </div>
-    </section>
-    <section>
-      <h2 id="bio">Biography</h2>
-      <h3>About me</h3>
-      <p>
-        I like numbers and I like arts and I like putting it in one with web
-        development.
-      </p>
-      <h3>CV</h3>
-      <table>
-        <tr>
-          <td>2020</td>
-          <td>Gruner + Jahr</td>
-        </tr>
-        <tr>
-          <td>2019</td>
-          <td>neuefische</td>
-        </tr>
-        <tr>
-          <td>2015 - 2018</td>
-          <td>HCU</td>
-        </tr>
-        <tr>
-          <td>2014</td>
-          <td>Elternzeit</td>
-        </tr>
-        <tr>
-          <td>2011 - 2013</td>
-          <td>Neusoft</td>
-        </tr>
-      </table>
-    </section>
+    <main class="page-main">
+      <section>
+        <h2>interests</h2>
+        <span>family</span>
+        <span>ballet</span>
+        <span>music</span>
+        <span>sewing</span>
+        <span>numbers</span>
+        <span>art</span>
+        <h2>skills</h2>
+        <span>html</span>
+        <span>css</span>
+        <span>javascript</span>
+        <span>react</span>
+      </section>
+      <section>
+        <h2 id="contact">Contact information</h2>
+        <h3>phone</h3>
+        <a href="tel:+491702735999">01702735999</a>
+        <h3>email</h3>
+        <a href="mailto:a.wisbar@gmail.com">a.wisbar@gmail.com</a>
+        <div>
+          <img src="images/github-cat.svg" alt="github logo" />
+          <a
+            href="https://github.com/anniviz"
+            rel="noopener noreferrer"
+            target="_blank"
+            >meet me on github</a
+          >
+        </div>
+        <div>
+          <img src="images/xing.svg" alt="xing logo" />
+          <a
+            href="https://www.xing.com/profile/Annemarie_Wisbar/cv"
+            rel="noopener noreferrer"
+            target="_blank"
+            >meet me on xing</a
+          >
+        </div>
+        <div>
+          <img src="images/codepen.svg" alt="codepen logo" />
+          <a
+            href="https://codepen.io/anniviz"
+            rel="noopener noreferrer"
+            target="_blank"
+            >meet me on codepen</a
+          >
+        </div>
+      </section>
+      <section>
+        <h2 id="bio">Biography</h2>
+        <h3>About me</h3>
+        <p>
+          I like numbers and I like arts and I like putting it in one with web
+          development.
+        </p>
+        <h3>CV</h3>
+        <table>
+          <tr>
+            <td>2020</td>
+            <td>Gruner + Jahr</td>
+          </tr>
+          <tr>
+            <td>2019</td>
+            <td>neuefische</td>
+          </tr>
+          <tr>
+            <td>2015 - 2018</td>
+            <td>HCU</td>
+          </tr>
+          <tr>
+            <td>2014</td>
+            <td>Elternzeit</td>
+          </tr>
+          <tr>
+            <td>2011 - 2013</td>
+            <td>Neusoft</td>
+          </tr>
+        </table>
+      </section>
+    </main>
+    <footer>
+      <a href="#start" class="button">back to top</a>
+    </footer>
   </body>
 </html>
