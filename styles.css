@@ -10,6 +10,8 @@
   --black: #333;
 
   --standard-margin-side: 28px;
+  --border-radius-elements: 8px;
+  --padding-elements: 8px;
 }
 
 html {
@@ -30,18 +32,25 @@ textarea {
   font-size: inherit;
 }
 
+p {
+  text-align: justify;
+  background: var(--contrast-light);
+  border-radius: var(--border-radius-elements);
+  padding: var(--padding-elements);
+}
+
 table {
   width: 100%;
   background: var(--contrast-light);
   border-collapse: collapse;
-  border-radius: 8px;
+  border-radius: var(--border-radius-elements);
 }
 table tr:nth-child(2n) {
   background: var(--contrast);
 }
 
 td {
-  padding: 8px;
+  padding: var(--padding-elements);
 }
 
 .page-header {
