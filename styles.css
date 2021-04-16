@@ -3,14 +3,24 @@
 }
 
 :root {
-  --primary: rgb(0, 113, 128);
-  --secondary: papayawhip;
+  --background-color: #fae3d9;
+  --primary: #8ac6d1;
+  --secondary: #8ac6d1;
+  --contrast: #ffb6b9;
   --black: #333;
 }
 
+html {
+  width: 100%;
+  background: var(--background-color);
+}
+
 body {
+  /* display: grid;
+  grid-template-rows: 1fr 1fr;
+  align-items: center; */
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: sans-serif;
   font-size: 112.5%;
   line-height: 1.4;
   color: var(--black);
@@ -47,7 +57,10 @@ textarea {
   border-radius: 4px;
 }
 
-.image-fluid {
-  width: 100%;
+.social-logo {
+  width: 200px;
   height: auto;
+}
+.social-anchor {
+  text-decoration: none;
 }
