@@ -9,7 +9,7 @@
   --contrast-light: #fae3d9;
   --black: #333;
 
-  --standard-margin-side: 40px;
+  --standard-margin-side: 28px;
 }
 
 html {
@@ -21,14 +21,7 @@ html {
 body {
   margin: 0;
   font-family: sans-serif;
-  font-size: 112.5%;
-  line-height: 1.4;
   color: var(--black);
-}
-
-a {
-  text-decoration: none;
-  border-bottom: 2px solid;
 }
 
 input,
@@ -58,14 +51,6 @@ textarea {
   border-radius: 4px;
 }
 
-.social-logo {
-  width: 200px;
-  height: auto;
-}
-.social-anchor {
-  text-decoration: none;
-}
-
 .page-main {
   margin: 0 var(--standard-margin-side);
 }
@@ -82,4 +67,21 @@ textarea {
 .list {
   list-style-type: none;
   padding: 0;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-logo {
+  width: auto;
+  height: 96px;
+  text-decoration: none;
 }
