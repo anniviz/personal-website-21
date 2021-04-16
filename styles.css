@@ -34,9 +34,6 @@ textarea {
 
 p {
   text-align: justify;
-  background: var(--contrast-light);
-  border-radius: var(--border-radius-elements);
-  padding: var(--padding-elements);
 }
 
 table {
