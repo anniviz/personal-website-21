@@ -50,6 +50,12 @@ td {
   padding: var(--padding-elements);
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+  margin: var(--standard-margin-side);
+}
+
 .page-header {
   display: flex;
   flex-direction: column;
