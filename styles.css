@@ -38,6 +38,7 @@ p {
 
 table {
   width: 100%;
+  max-width: 500px;
   background: var(--contrast-light);
   border-collapse: collapse;
   border-radius: var(--border-radius-elements);
@@ -98,7 +99,7 @@ footer {
 .contact-container {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 24px;
 }
 
 .contact-section {
